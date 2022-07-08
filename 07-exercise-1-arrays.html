@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var finalPrice = 0
+            const tax = 1.21;
+            const shoppingCart = [2.50, 7.50, 25, 50];
+
+            const calculate = (value, index, array) => {
+                finalPrice = finalPrice + value
+                console.log(finalPrice)
+            }
+
+            shoppingCart.forEach(calculate);
+
+            finalPrice = finalPrice * tax;
+            console.log(finalPrice);
+
+        </script>
+    </head>
+</html>
