@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let txt = "";
+            const beatles = ["Ringo", "Paul", "George", "John"];
+
+            const inLoop = (value, index, array) => {
+                txt += value.toUpperCase();
+            };
+
+            beatles.forEach(inLoop);
+            console.log(txt);
+
+            txt = "";
+            beatles.forEach( (value, index, array) => {
+                txt += `${ value.toUpperCase() } - `
+            })
+            console.log(txt);
+        </script>
+    </head>
+</html>
